@@ -1,0 +1,523 @@
+@import url(nullstyle.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&family=Montserrat:wght@300;400&display=swap");
+
+body {
+  background: #0e1014;
+  background-image: url(./img/body/purple\ ball.png),
+    url(./img/body/purple\ light.png), url(./img/body/red\ ball.png),
+    url(./img/body/red\ ball\ small.png), url(./img/body/red\ light.png);
+  background-position: 65% 1%, 50% 0, 45% 8%, 60% 58%, 0 0;
+  background-repeat: no-repeat;
+}
+@media (width: 320px) {
+  body {
+    background-image: url(./img/body/purple\ ball.png),
+      url(./img/body/purple\ light.png), url(./img/body/red\ ball.png),
+      url(./img/body/red\ ball\ small.png), url(./img/body/red\ light.png);
+    background-position: 65% 1%, 50px 50px, -15% 125%, 95% 70%, 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1141px;
+}
+
+@media (width: 320px) {
+  .container {
+    width: 320px;
+    overflow: hidden;
+  }
+}
+.headerWelbex {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 30px 0px 0px 0px;
+  width: 100%;
+}
+@media (width: 320px) {
+  .headerWelbex {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    margin: 0px 0px 0px 0px;
+    height: 55px;
+    width: 320px;
+    background: #0e1014;
+  }
+}
+.headerWelbexLogo {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  font-size: 10px;
+}
+@media (width: 320px) {
+  .headerWelbexLogo {
+    display: none;
+  }
+  .headerWelbexLink {
+    display: none;
+  }
+}
+.headerWelbexLogoImg {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.headerWelbexLogoText {
+  width: 140px;
+  margin: 10px 0px 0px 0px;
+  color: #e4e5ea;
+}
+.headerWelbexButtonGroup {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (width: 320px) {
+  .headerWelbexButtonGroup {
+    gap: 10px;
+  }
+}
+.headerWelbexButtonGroup button {
+  border: 0;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  color: #e4e5ea;
+  background-color: rgba(1, 1, 1, 0);
+}
+@media (width: 320px) {
+  .headerWelbexButtonGroup button {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #e4e5ea;
+  }
+  .headerWelbexButtonOnMobile {
+    display: none;
+  }
+}
+.headerWelbexLink {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-weight: 500;
+  color: #e4e5ea;
+  text-decoration: none;
+}
+@media (width: 320px) {
+  .headerWelbexLink {
+    display: none;
+  }
+}
+.headerWelbexLink a {
+  font-family: "Inter";
+  font-weight: 500;
+  color: #e4e5ea;
+  text-decoration: none;
+}
+
+.bodyWelbex {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  width: 100%;
+}
+@media (width: 320px) {
+  .bodyWelbex {
+    display: flex;
+    flex-direction: column;
+    margin: 90px 0px 0px 0px;
+    width: 320px;
+  }
+}
+.bodyWelbexTitle {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  width: 400px;
+}
+@media (width: 320px) {
+  .bodyWelbexTitle {
+    display: flex;
+
+    width: 320px;
+  }
+}
+.bodyWelbexTitle span {
+  display: block;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 48px;
+  color: #e4e5ea;
+}
+@media (width: 320px) {
+  .bodyWelbexTitle span {
+    width: 272px;
+    padding: 0px 0px 0px 30px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 36px;
+    color: #e4e5ea;
+  }
+}
+.bodyWelbexTitleFirst {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  color: #e4e5ea;
+  width: 300px;
+}
+@media (width: 320px) {
+  .bodyWelbexTitleFirst {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    color: #e4e5ea;
+    padding: 0px 0px 0px 30px;
+  }
+}
+.bodyWelbexTitleColor {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 48px;
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-emphasis-color: transparent;
+}
+@media (width: 320px) {
+  .bodyWelbexTitleColor {
+    display: block;
+    font-family: "Inter";
+    font-weight: 900;
+    font-size: 36px;
+    align-self: start;
+    padding: 10px 0px 10px 0px;
+    background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+  }
+}
+.bodyWelbexContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* width: 350px; */
+}
+@media (width: 320px) {
+  .bodyWelbexContent {
+    display: flex;
+    width: 320px;
+    padding: 45px 0px 0px 0px;
+    align-items: none;
+  }
+}
+.bodyWelbexContentTitle {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  text-align: right;
+  color: #e4e5ea;
+  width: 290px;
+}
+@media (width: 320px) {
+  .bodyWelbexContentTitle {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 18px;
+    text-align: start;
+    color: #e4e5ea;
+  }
+}
+.bodyWelbexContentTitleColor {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-emphasis-color: transparent;
+}
+.bodyWelbexContentInfo {
+  display: flex;
+  padding: 40px 0px 0px 0px;
+}
+@media (width: 320px) {
+  .bodyWelbexContentInfo {
+    display: none;
+  }
+}
+.bodyWelbexContentInfoLeft {
+  display: flex;
+  flex-direction: column;
+  width: 164px;
+}
+.bodyWelbexContentInfoRight {
+  display: flex;
+  flex-direction: column;
+  width: 164px;
+}
+.bodyWelbexContentInfoTitle {
+  display: block;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #e4e5ea;
+  padding: 20px 0px 0px 0px;
+}
+.bodyWelbexContentInfoText {
+  display: block;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: right;
+  color: #e4e5ea;
+  text-transform: none;
+  margin: 10px 0px 0px 0px;
+}
+.bodyWelbexContentButtonOrder {
+  width: 262px;
+  height: 61px;
+  background: #4077f3;
+  margin: 60px 0px 0px 0px;
+
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #e4e5ea;
+}
+@media (width: 320px) {
+  .bodyWelbexContentButtonOrder {
+    display: none;
+  }
+}
+.bodyWelbexContentOnMobile {
+  display: none;
+}
+@media (width: 320px) {
+  .bodyWelbexContentOnMobile {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0px 0px 16px;
+  }
+  .bodyWelbexContentOnMobile span {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #e4e5ea;
+  }
+  .bodyWelbexContentOnMobile span::before {
+    content: "— ";
+    background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+  }
+}
+
+.footerWelbex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 124px 0px 0px 0px;
+}
+@media (width: 320px) {
+  .footerWelbex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 60px 0px 0px 0px;
+    width: 320px;
+    padding: 0px 0px 0px 30px;
+    z-index: 1;
+    background-color: black;
+  }
+}
+.footerWelbexAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0px 90px 0px 0px;
+}
+@media (width: 320px) {
+  .footerWelbexAbout {
+    gap: 0px;
+    padding: 40px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+}
+.footerWelbexTitle {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #656566;
+  margin: 0px 0px 10px 0px;
+}
+@media (width: 320px) {
+  .footerWelbexTitle {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #656566;
+  }
+}
+.footerWelbexTitleLink {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 0px 0px 0px;
+  color: #e4e5ea;
+}
+.footerWelbexLink {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 0px 0px 0px;
+  color: #e4e5ea;
+}
+@media (width: 320px) {
+  .footerWelbexLink {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    color: #e4e5ea;
+    padding: 10px 0px 0px 0px;
+  }
+}
+.footerWelbexContactInfoTel {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  text-align: right;
+  color: #e4e5ea;
+  padding: 10px 0px 0px 0px;
+}
+.footerWelbexMenu {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 0px;
+}
+@media (width: 320px) {
+  .footerWelbexMenu {
+    display: flex;
+    width: 320px;
+    padding: 40px 0px 0px 0px;
+  }
+}
+.footerWelbexMenuButtonGroup {
+  display: flex;
+  gap: 50px;
+}
+@media (width: 320px) {
+  .footerWelbexMenuButtonGroup {
+    gap: 10px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    color: #e4e5ea;
+  }
+}
+.footerWelbexMenuButtonGroupOne {
+  display: flex;
+  flex-direction: column;
+}
+.footerWelbexMenuButtonGroupTwo {
+  display: flex;
+  flex-direction: column;
+}
+.footerWelbexContact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (width: 320px) {
+  .footerWelbexContact {
+    display: flex;
+    width: 320px;
+    padding: 40px 0px 0px 0px;
+    align-items: flex-start;
+  }
+}
+.footerWelbexContactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px 0px 0px 0px;
+}
+@media (width: 320px) {
+  .footerWelbexContactInfo {
+    align-items: flex-start;
+  }
+}
+.footerWelbexContactLast {
+  display: flex;
+  flex-direction: column;
+}
+.footerWelbexContactInfoLink {
+  display: flex;
+  gap: 15px;
+  padding: 25px 0px 0px 0px;
+}
+@media (width: 320px) {
+  .footerWelbexContactInfoLink {
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  .footerWelbexContactInfoLink a {
+    padding: 0px 5px 0px 0px;
+  }
+}
+.footerWelbexLink {
+  padding: 25px 0px 0px 0px;
+}
+.footerWelbexContactLast {
+  padding: 70px 0px 0px 0px;
+}
+.footerWelbexContactLastOut {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  text-align: right;
+  color: #e4e5ea;
+}
+.footerWelbexContactLastUnder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  text-align: right;
+  text-decoration-line: underline;
+  color: #e4e5ea;
+  padding: 10px 0px 30px 0px;
+}
+@media (width: 320px) {
+  .footerWelbexContactLastUnder {
+    text-align: start;
+    margin: 0px 0px 40px 0px;
+  }
+}
